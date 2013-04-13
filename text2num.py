@@ -79,3 +79,6 @@ if __name__ == "__main__":
     assert 6400005 == text2num("six million four hundred thousand five")
     assert 123456789012 == text2num("one hundred twenty three billion four hundred fifty six million seven hundred eighty nine thousand twelve")
     assert 4000000000000000000000000000000000 == text2num("four decillion")
+    import sys
+    for n in sys.argv[1:]:
+        print text2num(n)
