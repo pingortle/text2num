@@ -50,7 +50,7 @@ class NumberException(Exception):
         Exception.__init__(self, msg)
 
 def text2num(s):
-    a = re.split(r"[\s-]+", s)
+    a = re.split(r"[\s-]+", s.lower())
     n = 0
     g = 0
     for w in a:
